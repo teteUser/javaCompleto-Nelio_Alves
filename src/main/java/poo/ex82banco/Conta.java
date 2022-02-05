@@ -26,14 +26,16 @@ public class Conta {
     }
 
     public void depositar(Double quantia){
-        System.out.println("Updated account data:");
-        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f\n", this.getNumConta(), this.getNomeTitular(), this.getSaldo());
+        this.saldo += quantia;
     }
 
     public void sacar(Double quantia){
         this.saldo -= (quantia + 5.0);
         System.out.println("Updated account data:");
-        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f\n", this.getNumConta(), this.getNomeTitular(), this.getSaldo());
+
     }
 
+    public void toStringVoid() {
+        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f\n", this.getNumConta(), this.getNomeTitular(), this.getSaldo());
+    }
 }

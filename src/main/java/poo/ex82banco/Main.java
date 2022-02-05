@@ -11,8 +11,9 @@ public class Main {
 
         System.out.print("Enter account number: ");
         Conta account = new Conta(scan.nextInt());
+        scan.nextLine();
         System.out.print("Enter account holder: ");
-        account.setNomeTitular(scan.next());
+        account.setNomeTitular(scan.nextLine());
 
 
         System.out.print("Is there an initial deposit (y/n)? ");
@@ -23,10 +24,17 @@ public class Main {
         }
 
         System.out.println("Account data:");
-        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f\n", account.getNumConta(), account.getNomeTitular(), account.getSaldo());
+        account.toStringVoid();
 
         System.out.print("Enter a deposit value: ");
         account.depositar(scan.nextDouble());
+        System.out.println("Updated account data:");
+        account.toStringVoid();
+
+        System.out.print("Enter a withdraw value: ");
+        account.sacar(scan.nextDouble());
+        System.out.println("Updated account data: ");
+        account.toStringVoid();
 
 
         scan.close();
