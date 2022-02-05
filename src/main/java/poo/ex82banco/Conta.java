@@ -31,7 +31,6 @@ public class Conta {
 
     public void sacar(Double quantia){
         this.saldo -= (quantia + 5.0);
-        System.out.println("Updated account data:");
 
     }
 

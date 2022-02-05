@@ -3,7 +3,7 @@ package poo.ex82banco;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class MainConta {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
@@ -23,19 +23,18 @@ public class Main {
             account.depositar(scan.nextDouble());
         }
 
-        System.out.println("Account data:");
+        System.out.println("\nAccount data:");
         account.toStringVoid();
 
-        System.out.print("Enter a deposit value: ");
+        System.out.print("\nEnter a deposit value: ");
         account.depositar(scan.nextDouble());
         System.out.println("Updated account data:");
         account.toStringVoid();
 
-        System.out.print("Enter a withdraw value: ");
+        System.out.print("\nEnter a withdraw value: ");
         account.sacar(scan.nextDouble());
         System.out.println("Updated account data: ");
         account.toStringVoid();
-
 
         scan.close();
     }
