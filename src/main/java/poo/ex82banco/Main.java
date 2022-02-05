@@ -13,8 +13,11 @@ public class Main {
         Conta account = new Conta(scan.nextInt());
         System.out.print("Enter account holder: ");
         account.setNomeTitular(scan.next());
+
+
         System.out.print("Is there an initial deposit (y/n)? ");
-        if(scan.next().charAt(0) == 'y'){
+        String resp = scan.next();
+        if(resp.charAt(0) == 'y'){
             System.out.print("Enter initial deposit value: ");
             account.depositar(scan.nextDouble());
         }
@@ -24,7 +27,6 @@ public class Main {
 
         System.out.print("Enter a deposit value: ");
         account.depositar(scan.nextDouble());
-
 
 
         scan.close();
