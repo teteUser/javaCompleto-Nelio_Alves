@@ -13,21 +13,21 @@ public class TestAccount {
         Account account = new Account(scan.nextInt());
         scan.nextLine();
         System.out.print("Enter account holder: ");
-        account.setNomeTitular(scan.nextLine());
+        account.setHolder(scan.nextLine());
 
 
         System.out.print("Is there an initial deposit (y/n)? ");
         String resp = scan.next();
         if(resp.charAt(0) == 'y'){
             System.out.print("Enter initial deposit value: ");
-            account.depositar(scan.nextDouble());
+            account.deposit(scan.nextDouble());
         }
 
         System.out.println("\nAccount data:");
         account.toStringVoid();
 
         System.out.print("\nEnter a deposit value: ");
-        account.depositar(scan.nextDouble());
+        account.deposit(scan.nextDouble());
         System.out.println("Updated account data:");
         account.toStringVoid();
 
