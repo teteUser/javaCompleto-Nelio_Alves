@@ -3,7 +3,7 @@ package poo.ex82banco;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class MainConta {
+public class TestAccount {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
