@@ -1,11 +1,11 @@
 package poo.ex82banco;
 
-public class Conta {
+public class Account {
     private int numConta;
     private String nomeTitular;
     private Double saldo = 0d;
 
-    public Conta(int numConta) {
+    public Account(int numConta) {
         this.numConta = numConta;
     }
 

@@ -10,7 +10,7 @@ public class MainConta {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter account number: ");
-        Conta account = new Conta(scan.nextInt());
+        Account account = new Account(scan.nextInt());
         scan.nextLine();
         System.out.print("Enter account holder: ");
         account.setNomeTitular(scan.nextLine());
