@@ -29,7 +29,7 @@ public class Account {
         this.balance += quantia;
     }
 
-    public void sacar(Double quantia){
+    public void withdraw(Double quantia){
         this.balance -= (quantia + 5.0);
 
     }

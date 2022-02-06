@@ -32,7 +32,7 @@ public class TestAccount {
         account.toStringVoid();
 
         System.out.print("\nEnter a withdraw value: ");
-        account.sacar(scan.nextDouble());
+        account.withdraw(scan.nextDouble());
         System.out.println("Updated account data: ");
         account.toStringVoid();
 
