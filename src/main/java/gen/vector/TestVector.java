@@ -9,6 +9,7 @@ public class TestVector {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
+        EntityVector[] rooms = new EntityVector[10];
 
 
 
