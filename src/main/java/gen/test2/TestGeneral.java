@@ -1,8 +1,21 @@
 package gen.test2;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class TestGeneral {
     public static void main(String[] args) {
-        Double num = Math.pow(2.0, 3.0);
-        System.out.println(num);
+        Locale.setDefault(Locale.US);
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Quantas posições vc quer no vetor? ");
+        int n = scan.nextInt();
+        Double[] vetDouble = new Double[n];
+
+
+
+
+
+        scan.close();
     }
 }
