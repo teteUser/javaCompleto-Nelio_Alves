@@ -13,7 +13,7 @@ public class TestListExercise {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("How many employees will be registered? ");
-        Integer n = scan.nextInt();
+        int n = scan.nextInt();
 
         for(int i=1; i<=n; i++){
             System.out.println("\nEmployee #" + i + ":");
@@ -29,16 +29,16 @@ public class TestListExercise {
 
         System.out.print("\nEnter the employee id that will have salary increase: ");
         Integer empId = scan.nextInt();
-        Boolean found = false;
+        boolean found = false;
         for(Employee employee : employeeList){
             if(employee.getId().equals(empId)){
                 System.out.print("Enter the percentage: ");
-                Double p = scan.nextDouble();
+                double p = scan.nextDouble();
                 employee.setSalary(employee.getSalary() * (1+(p/100)));
                 found = true;
             }
         }
-        if(found == false) System.out.println("This id does not exist!");
+        if(!found) System.out.println("This id does not exist!");
 
         System.out.println("\nList of employees:");
         for(Employee employee : employeeList){
