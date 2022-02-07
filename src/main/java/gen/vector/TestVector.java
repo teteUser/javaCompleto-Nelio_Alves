@@ -21,7 +21,7 @@ public class TestVector {
         scan.nextLine();
 
         for(int i=1; i<=n; i++){
-            System.out.println("Rent #" + i + ":");
+            System.out.println("\nRent #" + i + ":");
             System.out.print("Name: ");
             String name = scan.nextLine();
             System.out.print("Email: ");
@@ -29,14 +29,13 @@ public class TestVector {
             System.out.print("Room: ");
             int room = scan.nextInt();
             rooms[room] = new EntityVector(name, email);
+            scan.nextLine();
         }
 
-        System.out.println("Busy rooms:");
-        for(int i=0; i<= rooms.length; i++){
-            if(rooms[i] != null) System.out.printf("%d: %s, %s"\n, i, rooms[i].getName(), rooms[i].getEmail());
+        System.out.println("\nBusy rooms:");
+        for(int i=0; i< rooms.length; i++){
+            if(rooms[i] != null) System.out.printf("%d: %s, %s\n", i, rooms[i].getName(), rooms[i].getEmail());
         }
-
-
 
         scan.close();
     }
