@@ -37,5 +37,10 @@ public class MainList {
         List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
 
 
+        for(String x : result){
+            System.out.println(x);
+        }
+
+
     }
 }
