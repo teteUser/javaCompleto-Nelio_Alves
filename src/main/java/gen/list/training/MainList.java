@@ -1,4 +1,4 @@
-package gen.list;
+package gen.list.training;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,6 @@ public class MainList {
         list.add(2, "Marco");
 
         System.out.println("\nTamanho da lista: " + list.size() + "\n");
-
 
         for(String x : list){
             System.out.println(x);
@@ -36,10 +35,13 @@ public class MainList {
 
         List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
 
-
         for(String x : result){
             System.out.println(x);
         }
+        System.out.println("--------------------------------");
+
+        String name = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
+        System.out.println(name);
 
 
     }
