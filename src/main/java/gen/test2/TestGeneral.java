@@ -13,9 +13,6 @@ public class TestGeneral {
         Double[] vetDouble = new Double[n];
 
 
-
-
-
         scan.close();
     }
 }
