@@ -20,7 +20,7 @@ public class CalendarPractice {
         cal.setTime(d);
         //cal.add(Calendar.HOUR_OF_DAY, 4); // Somando 4 horas na variável cal
         //d = cal.getTime(); // Retornando a hora da variável cal para a variável d
-        //System.out.println(sdf.format(d)); // Imprimindo a variável d com a formatação no padrão sdf
+        //System.out.println(sdf.format(d)); // Imprimindo a variável d com a formatação no padrão sdf (previamente declarado e definido)
 
         int minutes = cal.get(Calendar.MINUTE);
         int month = 1 + cal.get(Calendar.MONTH);
