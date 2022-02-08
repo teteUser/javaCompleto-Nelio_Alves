@@ -1,4 +1,4 @@
-package gen.vector;
+package general.vector;
 
 public class EntityVector {
     private String name;

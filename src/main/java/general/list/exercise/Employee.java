@@ -1,4 +1,4 @@
-package gen.list.exercise;
+package general.list.exercise;
 
 public class Employee {
     private Integer id;

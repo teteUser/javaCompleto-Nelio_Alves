@@ -1,4 +1,4 @@
-package gen.list.exercise;
+package general.list.exercise;
 
 import java.util.ArrayList;
 import java.util.List;

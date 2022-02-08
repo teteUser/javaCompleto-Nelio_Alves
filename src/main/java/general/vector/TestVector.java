@@ -1,4 +1,4 @@
-package gen.vector;
+package general.vector;
 
 import java.util.Locale;
 import java.util.Scanner;
