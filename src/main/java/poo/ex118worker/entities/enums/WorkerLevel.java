@@ -1,4 +1,4 @@
-package poo.ex118worker;
+package poo.ex118worker.entities.enums;
 
 public enum WorkerLevel {
     JUNIOR,

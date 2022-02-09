@@ -1,4 +1,4 @@
-package poo.ex118worker;
+package poo.ex118worker.entities;
 
 import java.util.Date;
 
@@ -6,6 +6,9 @@ public class HourContract {
     private Date date;
     private double valuePerHour;
     private int hours;
+
+    public HourContract() {
+    }
 
     public HourContract(Date date, double valuePerHour, int hours) {
         this.date = date;
@@ -47,7 +50,7 @@ public class HourContract {
     }
 
     public double totalValue(){
-        return this.valuePerHour * this.hours;
+        return valuePerHour * hours;
     }
 
 }
