@@ -1,9 +1,13 @@
 package poo.ex118worker;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Worker {
     private String name;
     private WorkerLevel workerLevel;
     private double baseSalary;
+    private List<HourContract> contracts = new ArrayList<>();
 
     public Worker(String name, WorkerLevel workerLevel, double baseSalary) {
         this.name = name;
@@ -44,5 +48,16 @@ public class Worker {
                 '}';
     }
 
+    public void addContract(HourContract contract){
+        this.contracts.add(contract);
+    }
+
+    public void removeContract(HourContract contract){
+        this.contracts.remove(contract)
+    }
+
+    public double income(int year, int month){
+
+    }
 
 }
