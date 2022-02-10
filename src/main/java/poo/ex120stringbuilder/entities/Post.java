@@ -78,6 +78,7 @@ public class Post {
         for(Comment c : comments){
             sb.append(c.getText() + "\n");
         }
+        sb.append("\n");
 
         return sb.toString();
     }
