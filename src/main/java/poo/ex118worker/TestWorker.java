@@ -54,6 +54,7 @@ public class TestWorker {
         System.out.println("Department: " + worker.getDepartment().getName());
         System.out.printf("Income for %s: %.2f\n", monthAndYear, worker.income(year1, month));
 
+        worker.removeContract(worker.getContracts().get(1));
 
         scan.close();
     }
