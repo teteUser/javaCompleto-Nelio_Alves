@@ -1,6 +1,10 @@
 package poo.ex121fixation.entities;
 
-public class Client {
+import java.util.Date;
 
+public class Client {
+    private String name;
+    private String email;
+    private Date birthDate;
 
 }
