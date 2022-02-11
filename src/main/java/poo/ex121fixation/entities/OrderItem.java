@@ -31,7 +31,7 @@ public class OrderItem {
     }
 
     public Product getProduct() {
-        return product;
+        return this.product;
     }
 
     public void setProduct(Product product) {
@@ -39,6 +39,7 @@ public class OrderItem {
     }
 
     public double subTotal(){
-        return price * quantity;
+        return this.price * this.quantity;
     }
+
 }
