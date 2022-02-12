@@ -1,12 +1,10 @@
 package general.enums;
 
-import java.util.Date;
-
 public class EnumExample {
 
     public static void main(String[] args) {
 
-        Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
+        Order order = new Order();
 
         System.out.println(order);
 

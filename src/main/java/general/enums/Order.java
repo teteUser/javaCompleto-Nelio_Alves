@@ -7,7 +7,7 @@ public class Order {
     private Date moment;
     private OrderStatus status;
 
-    public Order(Integer id, Date moment, OrderStatus status) {
+    public Order() {
         this.id = id;
         this.moment = moment;
         this.status = status;
@@ -39,7 +39,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "OrderEx121{" +
                 "id=" + id +
                 ", moment=" + moment +
                 ", status=" + status +

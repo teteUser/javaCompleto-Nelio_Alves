@@ -2,7 +2,8 @@ package poo.ex121fixation;
 
 import general.enums.Order;
 import poo.ex121fixation.entities.Client;
-import poo.ex121fixation.entities.enums.OrderStatus;
+import poo.ex121fixation.entities.OrderEx121;
+import poo.ex121fixation.entities.enums.OrderStatusEx121;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -26,9 +27,11 @@ public class TestFixation {
         System.out.print("Birth date (DD/MM/YYYY): ");
         client1.setBirthDate(sdf.parse(scan.nextLine()));
 
-        Order order1 = new Order();
+        OrderEx121 orderEx121_1 = new OrderEx121();
         System.out.println("\nEnter order data:");
         System.out.print("Status: ");
+        String orderStatus = scan.nextLine();
+        orderEx121_1.setOrderStatus(OrderStatusEx121.valueOf(scan.nextLine()));
 
 
         System.out.println(client1.getName());

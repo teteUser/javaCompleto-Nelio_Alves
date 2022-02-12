@@ -1,18 +1,18 @@
 package poo.ex121fixation.entities;
 
-import general.enums.OrderStatus;
+import poo.ex121fixation.entities.enums.OrderStatusEx121;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Order {
+public class OrderEx121 {
     private Date moment;
-    private OrderStatus orderStatus;
+    private OrderStatusEx121 orderStatus;
     private Client client;
     private List<OrderItem> orderItemList = new ArrayList<>();
 
-    public Order() {
+    public OrderEx121() {
         this.moment = new Date();
     }
 
@@ -20,12 +20,12 @@ public class Order {
         return moment;
     }
 
-    public OrderStatus getOrderStatus() {
+    public OrderStatusEx121 getOrderStatus() {
         return orderStatus;
     }
 
-    public void setOrderStatus(String orderStatus) {
-        this.orderStatus = OrderStatus.valueOf(orderStatus);
+    public void setOrderStatus(OrderStatusEx121 orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public void addItem(OrderItem orderItem){
