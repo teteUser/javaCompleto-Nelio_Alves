@@ -13,10 +13,6 @@ public class Order {
     private List<OrderItem> orderItemList = new ArrayList<>();
 
     public Order() {
-    }
-
-    public Order(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
         this.moment = new Date();
     }
 
@@ -28,8 +24,8 @@ public class Order {
         return orderStatus;
     }
 
-    public void setOrderStatus(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = OrderStatus.valueOf(orderStatus);
     }
 
     public void addItem(OrderItem orderItem){
