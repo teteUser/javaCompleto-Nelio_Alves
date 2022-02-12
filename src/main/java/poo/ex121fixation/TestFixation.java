@@ -1,6 +1,5 @@
 package poo.ex121fixation;
 
-import general.enums.Order;
 import poo.ex121fixation.entities.Client;
 import poo.ex121fixation.entities.OrderEx121;
 import poo.ex121fixation.entities.enums.OrderStatusEx121;
