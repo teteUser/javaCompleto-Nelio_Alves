@@ -2,6 +2,7 @@ package poo.ex121fixation;
 
 import poo.ex121fixation.entities.Client;
 import poo.ex121fixation.entities.OrderEx121;
+import poo.ex121fixation.entities.Product;
 import poo.ex121fixation.entities.enums.OrderStatusEx121;
 
 import java.text.ParseException;
@@ -33,8 +34,13 @@ public class TestFixation {
         orderEx121_1.setOrderStatus(OrderStatusEx121.valueOf(scan.nextLine()));
         System.out.print("How many items to this order? ");
         int n = scan.nextInt();
+        scan.nextLine();
         for(int i=1; i<=n; i++){
-
+            System.out.printf("Enter #%d item date:\n", i);
+            System.out.print("Product name: ");
+            String productName = scan.nextLine();
+            System.out.print("Product price: ");
+            Double productPrice = scan.nextDouble();
         }
 
         System.out.println(client1.getName());
