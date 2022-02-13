@@ -31,7 +31,11 @@ public class TestFixation {
         System.out.print("Status: ");
         String orderStatus = scan.nextLine();
         orderEx121_1.setOrderStatus(OrderStatusEx121.valueOf(scan.nextLine()));
+        System.out.print("How many items to this order? ");
+        int n = scan.nextInt();
+        for(int i=1; i<=n; i++){
 
+        }
 
         System.out.println(client1.getName());
 
