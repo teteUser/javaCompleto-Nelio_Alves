@@ -41,6 +41,8 @@ public class TestFixation {
             String productName = scan.nextLine();
             System.out.print("Product price: ");
             Double productPrice = scan.nextDouble();
+            System.out.print("Quantity: ");
+            Integer productQuantity = scan.nextInt();
         }
 
         System.out.println(client1.getName());
