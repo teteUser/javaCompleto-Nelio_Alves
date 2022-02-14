@@ -2,6 +2,7 @@ package poo.ex121fixation.entities;
 
 import poo.ex121fixation.entities.enums.OrderStatusEx121;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,6 +12,7 @@ public class OrderEx121 {
     private OrderStatusEx121 orderStatus;
     private Client client;
     private List<OrderItem> orderItemList = new ArrayList<>();
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
     public OrderEx121() {
         this.moment = new Date();
@@ -49,12 +51,12 @@ public class OrderEx121 {
         sb.append("\nORDER SUMMARY:\n");
         sb.append("Order moment: " + this.moment + "\n");
         sb.append("Order status: " + this.orderStatus.toString() + "\n");
-        sb.append("Client: " + this.client.getName() + " " + this.client.getBirthDate() + " " + this.client.getEmail() + "\n");
+        sb.append("Client: " + this.client.toString() + "\n");
         sb.append("Order items:\n");
         for(OrderItem o : orderItemList){
-            sb.append(o.getProduct().getName() + ", $" + Double.toString(o.getProduct().getPrice()) + ", Quantity: " + Integer.toString(o.getQuantity()) + ", Subtotal: $" + Double.toString(o.getPrice()) + "\n");
+            sb.append(o.getProduct().getName() + ", $" + String.format("%.2f", o.getProduct().getPrice()) + ", Quantity: " + Integer.toString(o.getQuantity()) + ", Subtotal: $" + String.format("%.2f", o.getPrice()) + "\n");
         }
-        sb.append("Total price: " + Double.toString(this.total()) + "\n");
+        sb.append("Total price: " + String.format("%.2f", this.total()) + "\n");
 
         return sb.toString();
     }

@@ -1,6 +1,7 @@
 package poo.ex121fixation.entities;
 
 public class Product {
+
     private String name;
     private double price;
 
