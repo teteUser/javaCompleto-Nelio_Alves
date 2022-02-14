@@ -1,4 +1,4 @@
-package poo.ex121fixation.entities;
+package poo.ex121fixation.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -32,6 +32,7 @@ public class Client {
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
+
 
     @Override
     public String toString() {

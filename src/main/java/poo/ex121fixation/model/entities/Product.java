@@ -1,4 +1,4 @@
-package poo.ex121fixation.entities;
+package poo.ex121fixation.model.entities;
 
 public class Product {
 

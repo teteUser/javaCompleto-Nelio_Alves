@@ -1,4 +1,4 @@
-package poo.ex121fixation.entities.enums;
+package poo.ex121fixation.enums;
 
 public enum OrderStatusEx121 {
     PENDING_PAYMENT,

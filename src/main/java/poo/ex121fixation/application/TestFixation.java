@@ -1,10 +1,10 @@
 package poo.ex121fixation;
 
-import poo.ex121fixation.entities.Client;
-import poo.ex121fixation.entities.OrderEx121;
-import poo.ex121fixation.entities.OrderItem;
-import poo.ex121fixation.entities.Product;
-import poo.ex121fixation.entities.enums.OrderStatusEx121;
+import poo.ex121fixation.model.entities.Client;
+import poo.ex121fixation.model.entities.OrderEx121;
+import poo.ex121fixation.model.entities.OrderItem;
+import poo.ex121fixation.model.entities.Product;
+import poo.ex121fixation.enums.OrderStatusEx121;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -30,12 +30,12 @@ public class TestFixation {
         client1.setBirthDate(sdf.parse(scan.nextLine()));
 
         OrderEx121 orderEx121_1 = new OrderEx121();
+        orderEx121_1.setClient(client1);
         System.out.println("\nEnter order data:");
         System.out.print("Status: ");
         orderEx121_1.setOrderStatus(OrderStatusEx121.valueOf(scan.nextLine()));
         System.out.print("How many items to this order? ");
         int n = scan.nextInt();
-        scan.nextLine();
         for(int i=1; i<=n; i++){
             System.out.printf("Enter #%d item date:\n", i);
             System.out.print("Product name: ");
@@ -51,7 +51,7 @@ public class TestFixation {
             orderEx121_1.addItem(orderItem);
         }
 
-        orderEx121_1.toSummary();
+        System.out.println(orderEx121_1.toSummary());
 
 
     }
