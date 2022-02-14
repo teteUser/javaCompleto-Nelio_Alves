@@ -44,4 +44,15 @@ public class OrderEx121 {
         return sum;
     }
 
+    public String toSummary() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nORDER SUMMARY:\n");
+        sb.append("Order moment: " + this.moment + "\n");
+        sb.append("Order status: " + this.orderStatus.toString() + "\n");
+        sb.append("Client: " + this.client.getName() + " " + this.client.getBirthDate() + " " + this.client.getEmail() + "\n");
+        sb.append("Order items:\n");
+        sb.append("Total price: " + Double.toString(this.total()) + "\n");
+
+        return sb.toString();
+    }
 }
