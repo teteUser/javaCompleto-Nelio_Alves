@@ -23,7 +23,7 @@ public class OrderItem {
     }
 
     public double getPrice() {
-        return price;
+        return product.getPrice()*quantity;
     }
 
     public void setPrice(double price) {

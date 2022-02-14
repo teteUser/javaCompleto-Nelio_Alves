@@ -51,6 +51,9 @@ public class OrderEx121 {
         sb.append("Order status: " + this.orderStatus.toString() + "\n");
         sb.append("Client: " + this.client.getName() + " " + this.client.getBirthDate() + " " + this.client.getEmail() + "\n");
         sb.append("Order items:\n");
+        for(OrderItem o : orderItemList){
+            sb.append(o.getProduct().getName() + ", $" + Double.toString(o.getProduct().getPrice()) + ", Quantity: " + Integer.toString(o.getQuantity()) + ", Subtotal: $" + Double.toString(o.getPrice()) + "\n");
+        }
         sb.append("Total price: " + Double.toString(this.total()) + "\n");
 
         return sb.toString();
