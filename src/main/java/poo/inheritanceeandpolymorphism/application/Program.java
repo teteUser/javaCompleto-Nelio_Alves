@@ -1,8 +1,8 @@
-package poo.heritageandpolymorphism.application;
+package poo.inheritanceeandpolymorphism.application;
 
-import poo.heritageandpolymorphism.entities.Account;
-import poo.heritageandpolymorphism.entities.BusinessAccount;
-import poo.heritageandpolymorphism.entities.SavingsAccount;
+import poo.inheritanceeandpolymorphism.entities.Account;
+import poo.inheritanceeandpolymorphism.entities.BusinessAccount;
+import poo.inheritanceeandpolymorphism.entities.SavingsAccount;
 
 import java.util.Locale;
 
@@ -50,5 +50,6 @@ public class Program {
         System.out.println("account3 balance: $" + String.format("%.2f", account3.getBalance()));
 
     }
+
 
 }

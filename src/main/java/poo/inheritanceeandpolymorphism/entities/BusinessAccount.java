@@ -1,4 +1,4 @@
-package poo.heritageandpolymorphism.entities;
+package poo.inheritanceeandpolymorphism.entities;
 
 public class BusinessAccount extends Account {
 
@@ -32,5 +32,6 @@ public class BusinessAccount extends Account {
         super.withdraw(amount);
         balance -= 2.0;
     }
+
 
 }

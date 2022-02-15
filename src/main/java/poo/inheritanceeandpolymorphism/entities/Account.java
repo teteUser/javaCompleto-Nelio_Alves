@@ -1,4 +1,4 @@
-package poo.heritageandpolymorphism.entities;
+package poo.inheritanceeandpolymorphism.entities;
 
 public class Account {
 
@@ -51,5 +51,6 @@ public class Account {
     public void deposit(double amount){
         balance += amount;
     }
+
 
 }

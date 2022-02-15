@@ -1,4 +1,4 @@
-package poo.heritageandpolymorphism.entities;
+package poo.inheritanceeandpolymorphism.entities;
 
 public final class SavingsAccount extends Account {
 
@@ -29,5 +29,6 @@ public final class SavingsAccount extends Account {
     public void withdraw(double amount){
         balance -= amount;
     }
+
 
 }
