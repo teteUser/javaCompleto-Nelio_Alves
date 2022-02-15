@@ -46,7 +46,6 @@ public class Main {
         }
         System.out.println("--------------------------------");
 
-        
         scan.close();
     }
 
