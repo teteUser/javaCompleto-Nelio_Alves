@@ -30,5 +30,4 @@ public final class SavingsAccount extends Account {
         balance -= amount;
     }
 
-
 }
