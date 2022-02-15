@@ -41,6 +41,9 @@ public class Program {
         account1.withdraw(200.0);
         System.out.println("account1 balance: $" + String.format("%.2f", account1.getBalance()));
 
+        Account account2 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
+        account2.withdraw(200.0);
+        System.out.println("account2 balance: $" + String.format("%.2f", account2.getBalance()));
 
 
     }
