@@ -2,12 +2,20 @@ package poo.ex130polymorphism.entities;
 
 public final class OutsourcedEmployee extends Employee{
 
+    private Double additionalCharge;
+
     public OutsourcedEmployee() {
         super();
     }
 
-    public double additionalCharge(double amount){
-        return super.payment() + (amount * 1.1);
+    public OutsourcedEmployee(String name, Integer hours, Double valuePerHour, Double additionalCharge) {
+        super(name, hours, valuePerHour);
+        this.additionalCharge = additionalCharge;
+    }
+
+    @Override
+    public double payment(){
+        return super.payment() + (additionalCharge * 1.1);
     }
 
 }
