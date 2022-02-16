@@ -27,7 +27,7 @@ public class ImportedProduct extends Product {
     }
 
     public double totalPrice(){
-
+        return 0.0;
     }
 
 }
