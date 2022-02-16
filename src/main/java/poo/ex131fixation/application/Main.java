@@ -20,9 +20,10 @@ public class Main {
         System.out.print("Enter the number of products: ");
         int n = scan.nextInt();
         for(int i=1; i<=n; i++){
-            System.out.printf("Product #%d data:", i);
+            System.out.printf("\nProduct #%d data:\n", i);
             System.out.print("Common, used or imported (c/u/i)? ");
             char ch = scan.next().charAt(0);
+            scan.nextLine();
             System.out.print("Name: ");
             String name = scan.nextLine();
             System.out.print("Price: ");
@@ -33,17 +34,20 @@ public class Main {
                 Product product = new ImportedProduct(name, price, fee);
                 productList.add(product);
             }else if(ch == 'u' || ch == 'U'){
+                scan.nextLine();
                 System.out.print("Manufacture date (DD/MM/YYYY): ");
-                Date date = sdf.parse(scan.nextLine());
-                UsedProduct product = new UsedProduct(name, price, date);
+                UsedProduct product = new UsedProduct(name, price, sdf.parse(scan.nextLine()));
+                productList.add(product);
+            }else if(ch == 'c' || ch == 'C'){
+                Product product = new Product(name, price);
+                productList.add(product);
             }
-
-
         }
 
-
-
-
+        System.out.println("\nPRICE TAGS:");
+        for(Product product : productList){
+            System.out.print(product.priceTag());
+        }
 
         scan.close();
     }

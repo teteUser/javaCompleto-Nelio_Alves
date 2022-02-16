@@ -29,16 +29,8 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
     public String priceTag(){
-        return "";
+        return name + " $ " + String.format("%.2f", price) + "\n";
     }
 
 }
