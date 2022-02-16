@@ -1,8 +1,11 @@
 package poo.ex131fixation.entities;
 
-public class ImportedProduct extends Product {
+import java.text.SimpleDateFormat;
+
+public final class ImportedProduct extends Product {
 
     private Double customsFee;
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public ImportedProduct() {
         super();

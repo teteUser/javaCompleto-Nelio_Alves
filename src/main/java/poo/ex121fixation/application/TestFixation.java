@@ -37,7 +37,7 @@ public class TestFixation {
         System.out.print("How many items to this order? ");
         int n = scan.nextInt();
         for(int i=1; i<=n; i++){
-            System.out.printf("Enter #%d item date:\n", i);
+            System.out.printf("Enter #%d item data:\n", i);
             System.out.print("Product name: ");
             scan.nextLine();
             String productName = scan.nextLine();
