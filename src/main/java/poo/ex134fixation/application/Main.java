@@ -50,7 +50,7 @@ public class Main {
 
         System.out.println("\nTOTAL TAXES: $" + String.format("%.2f", sum) + "\n");
 
+        scan.close();
     }
-
 
 }
