@@ -1,5 +1,11 @@
 package poo.ex134fixation.application;
 
+import poo.ex134fixation.entities.Company;
+import poo.ex134fixation.entities.Individual;
+import poo.ex134fixation.entities.TaxPayer;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -9,6 +15,7 @@ public class Main {
 
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
+        List<TaxPayer> taxPayerList = new ArrayList<>();
 
         System.out.print("Enter the number of tax payers: ");
         int n = scan.nextInt();
@@ -23,9 +30,13 @@ public class Main {
             if(ch == 'i' || ch == 'I') {
                 System.out.print("Health expenditures: ");
                 double health = scan.nextDouble();
+                Individual taxPayer = new Individual(name, income, health);
+                taxPayerList.add(taxPayer);
             }else if (ch == 'c' || ch == 'C'){
                 System.out.print("Number of employees: ");
                 int employees = scan.nextInt();
+                Company taxPayer = new Company(name, income, employees);
+                taxPayerList.add(taxPayer);
             }
 
         }
