@@ -22,11 +22,11 @@ public class Individual extends TaxPayer{
 
     @Override
     public String toString() {
-        return super.getName() + ": $ " + String.format("%.2f", this.taxCalculation() + "\n");
+        return super.getName() + ": $ " + String.format("%.2f", this.taxCalculation()) + "\n";
     }
 
     @Override
-    protected double taxCalculation() {
-        return 0;
+    public double taxCalculation() {
+        return super.getIncome() < 20000 ? (super.getIncome() * 0.15) - (this.getHealth() * 0.5) : (super.getIncome() * 0.25) - (this.getHealth() * 0.5);
     }
 }

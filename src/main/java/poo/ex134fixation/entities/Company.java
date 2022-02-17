@@ -22,12 +22,12 @@ public class Company extends TaxPayer{
 
     @Override
     public String toString() {
-        return super.getName() + ": $ " + String.format("%.2f", this.taxCalculation() + "\n");
+        return super.getName() + ": $ " + String.format("%.2f", this.taxCalculation()) + "\n";
     }
 
     @Override
-    protected double taxCalculation() {
-        return 0;
+    public double taxCalculation() {
+        return this.getEmployees() <= 10 ? (super.getIncome() * 0.16) : (super.getIncome() * 0.14);
     }
 
 }

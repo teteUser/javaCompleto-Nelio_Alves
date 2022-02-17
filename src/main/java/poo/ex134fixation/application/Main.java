@@ -23,6 +23,7 @@ public class Main {
             System.out.print("\nTax payer #" + i + " data:\n");
             System.out.print("Individual or company (i/c)? ");
             char ch = scan.next().charAt(0);
+            scan.nextLine();
             System.out.print("Name: ");
             String name = scan.nextLine();
             System.out.print("Annual income: ");
@@ -38,9 +39,16 @@ public class Main {
                 Company taxPayer = new Company(name, income, employees);
                 taxPayerList.add(taxPayer);
             }
-
         }
 
+        double sum = 0.0;
+        System.out.println("\nTAXES PAID:");
+        for(TaxPayer taxPayer : taxPayerList){
+            System.out.print(taxPayer.toString());
+            sum += taxPayer.taxCalculation();
+        }
+
+        System.out.println("\nTOTAL TAXES: $" + String.format("%.2f", sum) + "\n");
 
     }
 

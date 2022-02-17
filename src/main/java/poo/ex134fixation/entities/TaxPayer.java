@@ -28,6 +28,6 @@ public abstract class TaxPayer {
         this.income = income;
     }
 
-    protected abstract double taxCalculation();
+    public abstract double taxCalculation();
 
 }
