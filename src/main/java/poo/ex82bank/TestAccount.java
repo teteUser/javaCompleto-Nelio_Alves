@@ -1,4 +1,4 @@
-package poo.ex82banco;
+package poo.ex82bank;
 
 import java.util.Locale;
 import java.util.Scanner;

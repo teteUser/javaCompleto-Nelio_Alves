@@ -1,4 +1,4 @@
-package poo.ex82banco;
+package poo.ex82bank;
 
 public class Account {
     private int number;
