@@ -1,9 +1,9 @@
-package interfaces;
+package interfaces.lessons;
 
-import interfaces.model.entities.CarRental;
-import interfaces.model.entities.Vehicle;
-import interfaces.model.services.BrazilTaxService;
-import interfaces.model.services.RentalService;
+import interfaces.lessons.model.entities.CarRental;
+import interfaces.lessons.model.entities.Vehicle;
+import interfaces.lessons.model.services.BrazilTaxService;
+import interfaces.lessons.model.services.RentalService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

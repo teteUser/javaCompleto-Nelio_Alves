@@ -1,4 +1,4 @@
-package interfaces.model.entities;
+package interfaces.lessons.model.entities;
 
 public class Vehicle {
 

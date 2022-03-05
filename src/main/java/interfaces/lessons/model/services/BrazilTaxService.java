@@ -1,4 +1,4 @@
-package interfaces.model.services;
+package interfaces.lessons.model.services;
 
 public class BrazilTaxService implements TaxService{
 

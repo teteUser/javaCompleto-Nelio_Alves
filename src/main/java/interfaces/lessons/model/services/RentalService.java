@@ -1,7 +1,7 @@
-package interfaces.model.services;
+package interfaces.lessons.model.services;
 
-import interfaces.model.entities.CarRental;
-import interfaces.model.entities.Invoice;
+import interfaces.lessons.model.entities.CarRental;
+import interfaces.lessons.model.entities.Invoice;
 
 public class RentalService {
 
