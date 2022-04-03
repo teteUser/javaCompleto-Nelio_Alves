@@ -21,12 +21,6 @@ public class ConsumerProgram {
         // Applying Consumer logic with interface
         //list.forEach(new PriceUpdateConsumer());
 
-        // Applying Consumer logic by calling static method from Product class
-        //list.forEach(Product::staticProductUpdate);
-
-        // Applying Consumer logic by calling Non static method from Product class
-        //list.forEach(Product::nonStaticProductUpdate);
-
         // Applying Consumer logic with declared Lambda Expression
         /*double factor = 1.1;
         Consumer<Product> cons = p -> p.setPrice(p.getPrice() * factor);
@@ -34,6 +28,12 @@ public class ConsumerProgram {
 
         // Applying Consumer logic with inline Lambda Expression
         list.forEach(p -> p.setPrice(p.getPrice() * 1.1));
+
+        // Applying Consumer logic by calling static method from Product class
+        //list.forEach(Product::staticProductUpdate);
+
+        // Applying Consumer logic by calling Non static method from Product class
+        //list.forEach(Product::nonStaticProductUpdate);
 
         // Displaying output with Method Reference inside forEach
         list.forEach(System.out::println);
