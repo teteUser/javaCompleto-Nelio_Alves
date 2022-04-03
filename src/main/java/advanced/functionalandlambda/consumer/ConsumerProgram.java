@@ -9,8 +9,8 @@ import java.util.Locale;
 public class ConsumerProgram {
 
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
 
+        Locale.setDefault(Locale.US);
         List<Product> list = new ArrayList<>();
 
         list.add(new Product("TV", 900.00));

@@ -47,4 +47,14 @@ public class Product implements Comparable<Product> {
         price *= 1.1;
     }
 
+    // Static method with UpperCase logic
+    public static String staticUpperCaseName(Product p){
+        return p.getName().toUpperCase();
+    }
+
+    // Non-static method with UpperCase logic
+    public  String nonStaticUpperCaseName(){
+        return name.toUpperCase();
+    }
+
 }
