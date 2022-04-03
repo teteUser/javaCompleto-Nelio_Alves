@@ -1,5 +1,7 @@
 package advanced.functionalandlambda.comparator;
 
+import advanced.functionalandlambda.entities.Product;
+
 import java.util.*;
 
 public class ComparatorProgram {
@@ -7,15 +9,18 @@ public class ComparatorProgram {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
 
-        List<ComparatorProduct> list = new ArrayList<>();
+        List<Product> list = new ArrayList<>();
 
-        list.add(new ComparatorProduct("TV", 900.00));
-        list.add(new ComparatorProduct("Notebook", 1200.00));
-        list.add(new ComparatorProduct("Tablet", 450.00));
+        list.add(new Product("TV", 900.00));
+        list.add(new Product("Notebook", 1200.00));
+        list.add(new Product("Tablet", 450.00));
+        list.add(new Product("Mouse", 50.00));
+        list.add(new Product("HD Case", 80.90));
 
-        list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+        // Sorting by price
+        list.sort((p1, p2) -> p1.getPrice().compareTo(p2.getPrice()));
 
-        for(ComparatorProduct p : list){
+        for(Product p : list){
             System.out.println(p);
         }
 
