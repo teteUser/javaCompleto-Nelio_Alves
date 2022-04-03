@@ -37,4 +37,14 @@ public class Product implements Comparable<Product> {
         return price >= 100.0;
     }
 
+    // Static method with Consumer logic
+    public static void staticProductUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.1);
+    }
+
+    // Non-static method with Consumer logic
+    public void nonStaticProductUpdate(){
+        price *= 1.1;
+    }
+
 }
