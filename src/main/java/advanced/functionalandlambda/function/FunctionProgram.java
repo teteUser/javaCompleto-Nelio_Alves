@@ -5,7 +5,8 @@ import advanced.functionalandlambda.entities.Product;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
+
+import static advanced.functionalandlambda.function.FilteredSum.filteredSum;
 
 public class FunctionProgram {
 
@@ -33,10 +34,14 @@ public class FunctionProgram {
         List<String> names = list.stream().map(func).collect(Collectors.toList());*/
 
         // Applying upperCase logic with Inline Lambda Expression
-        List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+        //List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 
-        names.forEach(System.out::println);
-        
+        double sum = filteredSum(list, p -> p.getName().charAt(0) == 'T');
+
+        list.forEach(System.out::println);
+
+        System.out.println("Sum: " + sum);
+
     }
 
 }
