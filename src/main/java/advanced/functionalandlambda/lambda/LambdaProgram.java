@@ -1,7 +1,7 @@
 package advanced.functionalandlambda.lambda;
 
 import advanced.functionalandlambda.entities.Product;
-import advanced.functionalandlambda.util.ProductPredicate;
+import advanced.functionalandlambda.predicate.ProductPredicate;
 
 import java.util.ArrayList;
 import java.util.List;
